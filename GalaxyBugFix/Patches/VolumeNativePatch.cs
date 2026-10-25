@@ -20,7 +20,7 @@ namespace GalaxyBugFix.Patches
             TryGetVoxelNodeDetour = INativeDetour.CreateAndApply(
                 (nint)Il2CppAPI.GetIl2CppMethod<AIG_VoxelNodeVolume>(
                     nameof(AIG_VoxelNodeVolume.TryGetCloseVoxelNode),
-                    typeof(bool).Name,
+                    typeof(bool).FullName,
                     false,
                     new[] {
                         typeof(Vector3).FullName,
